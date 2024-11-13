@@ -3,9 +3,8 @@
   align-items: center;
   grid-template-columns: 1fr 137px 1fr;
   width: 1100px;
-  height: 100px;
   margin-top: 92px;
-  margin-bottom: 101px;
+  margin-bottom: 91px;
   padding-left: 24px;
   padding-right: 24px;
   font-size: 18px;
@@ -18,6 +17,7 @@
 .header_menu {
   margin-left: 27px;
 }
+
 .header_links-list {
   display: flex;
   list-style: circle;
@@ -54,9 +54,11 @@
   background-position: center;
   margin-bottom: 178px;
 }
+
 .overlay {
   background-color: rgb(0 0 0 / 0.6);
   z-index: 2;
+  height: 100%;
 }
 
 .cover_title {
@@ -120,6 +122,7 @@
 }
 
 .bet-button {
+  font-family: Raleway, sans-serif;
   font-size: 22px;
   font-weight: 500;
   line-height: 25px;
@@ -137,7 +140,7 @@
 }
 
 .lots_heading {
-  font-family: Raleway;
+  font-family: Raleway, sans-serif;
   font-size: 40px;
   font-weight: 700;
   line-height: 46.96px;
@@ -150,8 +153,10 @@
 
 .lots_card-list {
   display: flex;
-  justify-content: space-evenly;
   margin-bottom: 33px;
+  padding: 0 22px;
+  flex-wrap: wrap;
+  gap: 25px;
 }
 
 .card {
@@ -162,18 +167,21 @@
   flex-direction: column;
   justify-content: space-between;
 }
+
 .lots_card-list-item {
   list-style: none;
 }
+
 .card-link {
   display: block;
   text-decoration: none;
   height: 100%;
-  width: 100%;
+  background-position: center;
+  background-size: cover;
 }
 
 .card_title {
-  font-family: Raleway;
+  font-family: Raleway, sans-serif;
   font-size: 22px;
   font-weight: 700;
   line-height: 26px;
@@ -184,37 +192,32 @@
 }
 
 .card_text {
-  font-family: Raleway;
+  font-family: Raleway, sans-serif;
   font-size: 20px;
   font-weight: 400;
   line-height: 24px;
   text-align: left;
-
   color: white;
 }
+
 .card_type_film {
   background-image: url(../images/card-lot-01.jpg);
-  background-size: cover;
-  background-position: center;
-  z-index: -1;
 }
+
 .card_type_book {
   background-image: url(../images/card-lot-02.jpg);
-  background-size: cover;
-  background-position: center;
-  z-index: -1;
 }
 
 .card_type_picture {
   background-image: url(../images/card-lot-03.jpg);
-  background-size: cover;
-  background-position: center;
-  z-index: -1;
 }
+
 .lots_look-more-link {
+  font-family: Raleway, sans-serif;
   font-size: 20px;
   padding-left: 64px;
   text-underline-offset: 4px;
+  text-decoration-thickness: 1px;
 }
 
 .about {
@@ -228,6 +231,7 @@
   padding: 0 25px;
   margin-bottom: 180px;
 }
+
 .about_logo {
   grid-area: logo;
   background-color: black;
@@ -241,7 +245,6 @@
 .about_logo-image {
   background-size: cover;
   width: 150px;
-  height: 115px;
   margin: auto;
 }
 
@@ -263,7 +266,8 @@
   line-height: 24px;
   text-align: left;
 }
-.about_text_upper-paragraph {
+
+.about_text p:not(:last-child) {
   margin-bottom: 22px;
 }
 
@@ -271,8 +275,8 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   width: 1100px;
-  height: 100px;
   font-size: 18px;
+  margin-bottom: 88px;
 }
 
 .footer_address {
@@ -286,6 +290,7 @@
   text-underline-offset: 4px;
   text-align: center;
 }
+
 .footer_menu-link_active {
   text-decoration: none;
 }
